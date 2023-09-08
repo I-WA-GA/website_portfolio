@@ -1,0 +1,49 @@
+@charset "UTF-8";
+main .contents section .wrapper .sample {
+  margin-top: 20%;
+}
+main .contents section .wrapper .sample h3 {
+  font-size: 1.5rem;
+  margin-top: 5%;
+}
+main .contents section .wrapper .sample img {
+  width: 85%;
+  margin: 3% auto;
+  display: block;
+  border-radius: 20px;
+}
+main .contents section .wrapper .sample .explain {
+  display: flex;
+  width: 100%;
+  margin: 10px;
+}
+main .contents section .wrapper .sample .explain .procedure {
+  flex: 1;
+  padding: 10px;
+}
+main .contents section .wrapper .sample .explain .point {
+  flex: 2;
+  padding: 10px;
+}
+main .contents section .wrapper .sample .explain .point h4:not(:first-child) {
+  margin-top: 20px;
+}
+
+/*768px以下-------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  main .contents section .wrapper .sample .explain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+  }
+  main .contents section .wrapper .sample .explain .procedure {
+    flex: 1;
+    padding: 10px;
+  }
+  main .contents section .wrapper .sample .explain .point {
+    flex: 2;
+    padding: 10px;
+  }
+}/*# sourceMappingURL=production.css.map */

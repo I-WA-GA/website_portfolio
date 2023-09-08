@@ -1,0 +1,87 @@
+main {
+    .contents {
+        section {
+            .wrapper {
+                .sample {
+                    margin-top: 20%;
+
+                    h3 {
+                        font-size: 1.5rem;
+                        margin-top: 5%;
+                    }
+
+                    img {
+                        width: 85%;
+                        margin: 3% auto;
+                        display: block;
+                        border-radius: 20px;
+                    }
+
+                    .explain {
+                        display: flex;
+                        width: 100%;
+                        margin: 10px;
+
+                        .procedure {
+                            flex: 1;
+                            // background-color: #acd440;
+                            padding: 10px;
+                        }
+
+                        .point {
+                            flex: 2;
+                            // background-color: #897cc8;
+                            padding: 10px;
+
+                            h4 {
+                                &:not(:first-child) {
+                                    margin-top: 20px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*768px以下-------------------------------------------------------------*/
+@media screen and (max-width:768px) {
+
+    main {
+        .contents {
+            section {
+                .wrapper {
+                    .sample {
+                        .explain {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 100%;
+                            margin: 10px;
+
+                            .procedure {
+                                flex: 1;
+                                // background-color: #acd440;
+                                padding: 10px;
+                            }
+
+                            .point {
+                                flex: 2;
+                                // background-color: #897cc8;
+                                padding: 10px;
+
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}

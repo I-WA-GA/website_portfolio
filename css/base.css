@@ -1,0 +1,271 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Segoe UI", "Meiryo UI", Meiryo, メイリオ;
+}
+
+body {
+  height: 100%;
+  background: url(../img/portfolio_bgi.jpg) center/cover;
+}
+
+:root {
+  scroll-behavior: smooth;
+  --color-main: #125062;
+  --color-main_bgc: rgba(255, 255, 255, 0.6);
+  --color-text_bgc: rgba(229, 229, 229, 0.5);
+  --color-font01: #333;
+  --color-font02: #fff;
+  --color-point: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(242, 42, 42, 0.6774941995359629) 49%, rgba(252, 176, 69, 1) 100%);
+}
+
+.full_wrapper {
+  max-width: 1200px;
+  display: flex;
+}
+
+header,
+main,
+.text_inner p,
+.hscroll ul li img {
+  border-radius: 20px;
+}
+
+header {
+  width: 200px;
+  height: 470px;
+  box-shadow: 0px 4px 4px 0px #333;
+  color: var(--color-font02);
+  background-color: var(--color-main);
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  margin: 5%;
+}
+header .header-wrapper {
+  padding-right: 97px;
+  margin-top: 20px;
+}
+header .header-wrapper a {
+  text-decoration: none;
+}
+header .header-wrapper a h1 .logo {
+  font-size: 2rem;
+  color: var(--color-font02);
+}
+header .header-wrapper a h1 .logo01 {
+  letter-spacing: 0.2rem;
+}
+header .header-wrapper a h1 .logo02 {
+  letter-spacing: 0.1rem;
+}
+header nav {
+  margin-top: 30px;
+  height: 100%;
+}
+header nav ul {
+  list-style: none;
+  display: inline-block;
+  overflow: hidden;
+}
+header nav ul li {
+  padding: 20px 10px;
+  border-radius: 20px;
+  display: block;
+  transition-duration: 0.5s;
+}
+header nav ul li:hover {
+  transform: scale(1.2);
+}
+header nav ul li a .nav_img {
+  width: 48px;
+}
+
+header nav ul li a,
+.readMore a {
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-font02);
+  width: 100px;
+}
+
+main {
+  width: 70%;
+  margin: 2% 0 2% 20%;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 4px 0px #333;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  text-align: left;
+}
+main .contents {
+  margin: 30px 40px;
+}
+main .contents section {
+  margin-top: 80px;
+}
+main .contents section h2 {
+  font-size: 1.5rem;
+}
+main .contents section .wrapper {
+  padding: 3%;
+  display: block;
+  margin: 0 auto;
+}
+main .contents section .wrapper .text_inner p {
+  padding: 20px;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  line-height: 1.5rem;
+  background-color: var(--color-text_bgc);
+  text-align: center;
+}
+main .contents section .wrapper .hscroll {
+  width: 70%;
+  height: auto;
+  margin: 20px auto;
+  position: relative;
+  border: 1px solid lightgray;
+  text-align: center;
+  border: transparent 1px solid;
+}
+main .contents section .wrapper .hscroll ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+main .contents section .wrapper .hscroll ul li {
+  list-style: none;
+  display: inline-block;
+  scroll-snap-align: center;
+  width: 100%;
+  height: 100%;
+}
+main .contents section .wrapper .hscroll ul li a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .contents section .wrapper .hscroll ul li a h4 {
+  font-size: 1.3rem;
+}
+main .contents section .wrapper .hscroll .arrow {
+  top: 0;
+  position: absolute;
+  width: 8%;
+  height: 100%;
+  cursor: pointer;
+}
+main .contents section .wrapper .hscroll .arrow:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-left: 4px solid gray;
+  border-bottom: 4px solid gray;
+}
+main .contents section .wrapper .hscroll .left {
+  left: 0px;
+}
+main .contents section .wrapper .hscroll .left:before {
+  top: calc(50% - 10px);
+  left: calc(50% - 70px);
+  transform: rotate(45deg);
+}
+main .contents section .wrapper .hscroll .right {
+  right: 0;
+}
+main .contents section .wrapper .hscroll .right:before {
+  top: calc(50% - 10px);
+  right: calc(50% - 70px);
+  transform: rotate(-135deg);
+}
+main .contents section .wrapper .readMore {
+  text-align: center;
+}
+
+.btn {
+  margin: 30px auto;
+  width: 200px;
+  font-size: 1.1rem;
+  background-color: var(--color-main);
+  color: var(--color-font02);
+  padding: 5px 10px;
+  box-shadow: 0px 4px 4px 0px #999;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.btn:hover {
+  transform: scale(1.1);
+  transform: translateY(-10px);
+  background: var(--color-point);
+}
+
+.mail_link_btn {
+  border: 3px solid;
+  -o-border-image: var(--color-point) 1;
+     border-image: var(--color-point) 1;
+  background-color: var(--color-font02);
+}
+.mail_link_btn a {
+  color: var(--color-font01);
+  font-weight: 600;
+}
+
+/*768px以下-------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  header {
+    z-index: 99;
+    border-radius: 0%;
+    width: 100vw;
+    height: 100px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    right: 5px;
+    left: 5px;
+  }
+  header .header-wrapper {
+    padding: 5px 0 0 0;
+  }
+  header .header-wrapper h1 {
+    display: none;
+  }
+  header nav {
+    margin: 0;
+  }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  header nav ul li {
+    padding: 0;
+    width: 25%;
+  }
+  header nav ul li a .nav_img {
+    width: 48px;
+  }
+  main {
+    width: 93%;
+    margin: 2% auto;
+  }
+  main .contents section .wrapper {
+    padding: 0;
+  }
+  main .contents section .wrapper .text_inner p {
+    padding: 20px;
+  }
+  main .contents section .wrapper .hscroll ul {
+    overflow-x: auto;
+  }
+}/*# sourceMappingURL=base.css.map */
