@@ -1,3 +1,3 @@
 sample
 
-GitHubから編集
+コンフリクトテストGitHubから編集
