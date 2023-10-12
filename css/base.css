@@ -257,7 +257,7 @@ main .contents section .wrapper .readMore {
   }
   main {
     width: 93%;
-    margin: 2% auto;
+    margin:10px auto 120px;
   }
   main .contents section .wrapper {
     padding: 0;

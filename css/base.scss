@@ -311,7 +311,7 @@ main {
 
     main {
         width: 93%;
-        margin: 2% auto;
+        margin:10px auto 120px;
 
         .contents {
             section {
@@ -322,18 +322,20 @@ main {
                         }
                     }
 
-                    padding: 0;
-
                     .hscroll {
+                        padding: 0;
                         width: 100%;
+
                         .right:before {
                             top: calc(50% - 30px);
                             right: calc(50% - 0);
                         }
+
                         .left:before {
                             top: calc(50% - 30px);
                             left: calc(50% - 0);
                         }
+
                         ul {
                             overflow-x: auto;
                         }
