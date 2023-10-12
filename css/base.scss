@@ -48,18 +48,20 @@ header {
     .header-wrapper {
         padding-right: 97px;
         margin-top: 20px;
-        a{
+
+        a {
             text-decoration: none;
+
             h1 {
                 .logo {
                     font-size: 2rem;
                     color: var(--color-font02);
                 }
-    
+
                 .logo01 {
                     letter-spacing: 0.2rem;
                 }
-    
+
                 .logo02 {
                     letter-spacing: 0.1rem;
                 }
@@ -322,9 +324,21 @@ main {
 
                     padding: 0;
 
-                    .hscroll ul {
-                        overflow-x: auto;
+                    .hscroll {
+                        width: 100%;
+                        .right:before {
+                            top: calc(50% - 30px);
+                            right: calc(50% - 0);
+                        }
+                        .left:before {
+                            top: calc(50% - 30px);
+                            left: calc(50% - 0);
+                        }
+                        ul {
+                            overflow-x: auto;
+                        }
                     }
+
                 }
             }
         }

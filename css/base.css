@@ -265,6 +265,17 @@ main .contents section .wrapper .readMore {
   main .contents section .wrapper .text_inner p {
     padding: 20px;
   }
+  main .contents section .wrapper .hscroll {
+    width: 100%;
+  }
+  main .contents section .wrapper .hscroll .right:before {
+    top: calc(50% - 30px);
+    right: 50%;
+  }
+  main .contents section .wrapper .hscroll .left:before {
+    top: calc(50% - 30px);
+    left: 50%;
+  }
   main .contents section .wrapper .hscroll ul {
     overflow-x: auto;
   }
